@@ -1,0 +1,46 @@
+// =========================================================
+// File: main.cpp
+// Author: Francisco Couttolenc Ortiz
+// Date: 10/06/2022
+// Description:
+// To compile: g++ -std=c++11 main.cpp -o app
+// To execute: ./app input_file output_file
+// =========================================================
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <iomanip>
+#include <fstream>
+#include <vector>
+#include "bill.h"
+#include "operator.h"
+#include "vox.h"
+#include "internet.h"
+#include "customer.h"
+
+using namespace std;
+
+int main(int argc, char* argv[]) {
+  ofstream outputFile;
+  ifstream inputFile;
+
+  int N, O, C;
+
+  if(argc !=3){
+    cout<<"usage:"<<argv[0]<<"input_file output_file"<<"\n";
+    return-1;
+  }
+  inputFile.open(argv[1]);
+  if(!inputFile.is_open(){
+    cout<<arg[0]<<"File\""<<argv[1]<<"\not found\n";
+    return -1;
+  }
+  outputFile.open(argv[2]);
+
+  inputFile>>C>>O>>N;
+
+  vector<Customer*>customers;
+  customers.rezise(C);
+  vector<Operator*>operartors;
+  operators.resize(0);
+  return 0;
