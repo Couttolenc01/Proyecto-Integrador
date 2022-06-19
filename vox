@@ -1,0 +1,51 @@
+// =========================================================
+// File: vox.h
+// Author:
+// Date:
+// Description:
+// =========================================================
+
+#ifndef VOXOPERATOR_H
+#define VOXOPERATOR_H
+
+#include "operator.h"
+
+class VoxOperator : public Operator {
+public:
+  VoxOperator(int, double, double, double, int, OperatorType);
+  VoxOperator(const VoxOperator&);
+
+  double calculateTalkingCost(int, int);
+  double calculateMessageCost(int, int, int);
+  double calculateNetworkCost(double);
+};
+c1->setOperator(p);
+
+break;
+
+case 8 
+  inputF >> i1 >> amount;
+c1 = cusv[i1];
+
+c1 ->getBill()->limitamount(amount);
+
+break;
+ }
+}
+
+for (int t = 0; t < 0; t++) {
+  outF << opv[t]->toString()<<"\n";
+}
+for (int t = 0; t<C; t++){
+  outF<< cusv[t]->toString()<<"\n";
+}
+Customer *maxT, *maxM, *maxI;
+
+maxT= cusv[0];
+for (int t = 1; t < C; t++){
+  if (cusv[t]->getTotalSpentTalkingTime()> maxT->getTotalSpentTalkingTime()) {
+    maxT = cusv[t];
+  }
+}
+
+#endif
